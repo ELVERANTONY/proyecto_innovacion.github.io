@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Header from '../../components/Header.astro';
+// Página Semana 06
+---
+
+<BaseLayout title="Semana 06 - En Desarrollo | ErgoWave">
+    <div slot="header">
+        <Header />
+        <Breadcrumb items={[
+            { label: 'Inicio', href: '/' },
+            { label: 'Proyecto', href: '/' },
+            { label: 'Semana 06 - En Desarrollo' }
+        ]} />
+    </div>
+
+    <div class="week-content">
+        <div class="week-header">
+            <h1>Semana 06 – En Desarrollo</h1>
+            <p class="week-subtitle">Contenido en construcción...</p>
+        </div>
+
+        <div class="construction-message">
+            <i class="bi bi-tools"></i>
+            <h2>Esta semana está en desarrollo</h2>
+            <p>Estamos trabajando en el contenido de esta sección. ¡Vuelve pronto!</p>
+        </div>
+    </div>
+</BaseLayout>

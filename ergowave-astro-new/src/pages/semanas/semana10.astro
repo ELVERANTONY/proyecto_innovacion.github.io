@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Header from '../../components/Header.astro';
+// Página Semana 10
+---
+
+<BaseLayout title="Semana 10 - Electrónica | ErgoWave">
+    <div slot="header">
+        <Header />
+        <Breadcrumb items={[
+            { label: 'Inicio', href: '/' },
+            { label: 'Proyecto', href: '/' },
+            { label: 'Semana 10 - Electrónica' }
+        ]} />
+    </div>
+
+    <div class="week-content">
+        <div class="week-header">
+            <h1>Semana 10 – Electrónica</h1>
+            <p class="week-subtitle">Sistema de vibración y pantalla LED inteligente</p>
+        </div>
+
+        <div class="construction-message">
+            <i class="bi bi-tools"></i>
+            <h2>Esta semana está en desarrollo</h2>
+            <p>Estamos trabajando en el sistema electrónico de ErgoWave. ¡Vuelve pronto para ver avances!</p>
+        </div>
+    </div>
+</BaseLayout>

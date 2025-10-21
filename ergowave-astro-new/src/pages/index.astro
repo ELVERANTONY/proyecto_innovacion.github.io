@@ -1,0 +1,316 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import Header from '../components/Header.astro';
+---
+
+<BaseLayout title="ErgoWave - Mouse Tecnológico">
+    <div slot="header">
+        <Header />
+        <Breadcrumb items={[
+            { label: 'Inicio', href: '/' },
+            { label: 'Proyecto' }
+        ]} />
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="bi bi-star-fill"></i>
+                    <span>Innovación Tecnológica 2025</span>
+                </div>
+                <h2>Del diseño digital al corte láser y Diseño 3D: dando forma a ErgoWave</h2>
+                <div class="hero-description">
+                    <p>Mouse tecnológico con vibración inteligente y recordatorio visual para estudiantes y tele-trabajadores que pasan +6 h frente al PC.</p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#features" class="btn-primary">
+                        <span>Descubre más</span>
+                        <i class="bi bi-arrow-down-circle-fill"></i>
+                    </a>
+                    <a href="/innovacion" class="btn-secondary">
+                        <span>Ver Innovación</span>
+                        <i class="bi bi-lightbulb-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="product-showcase">
+                    <div class="mouse-3d">
+                        <i class="bi bi-mouse"></i>
+                    </div>
+                    <div class="floating-elements">
+                        <span class="element"><i class="bi bi-lightning-charge-fill"></i></span>
+                        <span class="element"><i class="bi bi-battery-charging"></i></span>
+                        <span class="element"><i class="bi bi-phone-fill"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats-section">
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-heart-pulse-fill"></i>
+            </div>
+            <div class="stat-number">68%</div>
+            <div class="stat-text">Jóvenes peruanos sienten dolor crónico en mano o espalda</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-clock-fill"></i>
+            </div>
+            <div class="stat-number">6+</div>
+            <div class="stat-text">Horas promedio frente al computador</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <div class="stat-number">100%</div>
+            <div class="stat-text">Ergonómico y tecnológico</div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="section-header">
+            <div class="section-icon">
+                <i class="bi bi-people-fill"></i>
+            </div>
+            <h3>Nuestro Equipo</h3>
+            <p class="section-description">Profesionales comprometidos con la innovación</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-avatar">
+                    <i class="bi bi-person-badge-fill"></i>
+                </div>
+                <div class="member-info">
+                    <h4>Cholan Garcia Elver Antony</h4>
+                    <span>Desarrollador Principal</span>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-avatar">
+                    <i class="bi bi-box-seam-fill"></i>
+                </div>
+                <div class="member-info">
+                    <h4>De La Cruz Palpa Piero Fabrizzio</h4>
+                    <span>Diseñador 3D</span>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="member-avatar">
+                    <i class="bi bi-cpu-fill"></i>
+                </div>
+                <div class="member-info">
+                    <h4>Salas Perez Agustín Santiago</h4>
+                    <span>Ingeniero de Hardware</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section class="features-section" id="features">
+        <div class="section-header">
+            <h3>¿Qué es ErgoWave?</h3>
+            <p class="section-description">Tecnología innovadora diseñada para tu bienestar</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="bi bi-hand-index-thumb-fill"></i>
+                </div>
+                <h4>Masaje Vibratorio</h4>
+                <p>Base con vibración inteligente para aliviar tensión en la mano</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="bi bi-phone-vibrate-fill"></i>
+                </div>
+                <h4>Pantalla Recordatoria</h4>
+                <p>Indica pausas activas para mantener hábitos saludables</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="bi bi-mouse-fill"></i>
+                </div>
+                <h4>Diseño Ergonómico</h4>
+                <p>Reduce la presión en las articulaciones de la mano</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Week Navigation Cards -->
+    <section class="week-cards-section">
+        <h3>Documentación del Proyecto</h3>
+        <p class="section-subtitle">Explora cada fase del desarrollo de ErgoWave</p>
+        <div class="week-cards-grid">
+            <div class="week-card completed" data-week="02">
+                <div class="card-image">
+                    <div class="placeholder-image">
+                        <i class="bi bi-lightbulb-fill"></i>
+                    </div>
+                    <div class="card-overlay">
+                        <i class="bi bi-lightbulb-fill"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h4>Semana 02</h4>
+                    <h5>Design Thinking</h5>
+                    <p>Identificación del problema y desarrollo de soluciones innovadoras</p>
+                    <a href="/semanas/semana02" class="card-link">
+                        <span>Ver detalles</span>
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="week-card completed" data-week="04">
+                <div class="card-image">
+                    <div class="placeholder-image">
+                        <i class="bi bi-box-fill"></i>
+                    </div>
+                    <div class="card-overlay">
+                        <i class="bi bi-box-fill"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h4>Semana 04</h4>
+                    <h5>Modelado 3D</h5>
+                    <p>Diseño en Tinkercad e impresión 3D del prototipo</p>
+                    <a href="/semanas/semana04" class="card-link">
+                        <span>Ver detalles</span>
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="week-card completed" data-week="06">
+                <div class="card-image">
+                    <div class="placeholder-image">
+                        <i class="bi bi-scissors"></i>
+                    </div>
+                    <div class="card-overlay">
+                        <i class="bi bi-scissors"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h4>Semana 06</h4>
+                    <h5>Corte Láser</h5>
+                    <p>Base y soporte con Onshape para ensamblaje perfecto</p>
+                    <a href="/semanas/semana06" class="card-link">
+                        <span>Ver detalles</span>
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="week-card completed" data-week="08">
+                <div class="card-image">
+                    <div class="placeholder-image">
+                        <i class="bi bi-puzzle-fill"></i>
+                    </div>
+                    <div class="card-overlay">
+                        <i class="bi bi-puzzle-fill"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h4>Semana 08</h4>
+                    <h5>Integración</h5>
+                    <p>Ensamblaje de componentes y pruebas de funcionalidad</p>
+                    <a href="/semanas/semana08" class="card-link">
+                        <span>Ver detalles</span>
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="week-card upcoming" data-week="10">
+                <div class="card-image">
+                    <div class="placeholder-image">
+                        <i class="bi bi-cpu-fill"></i>
+                    </div>
+                    <div class="card-overlay">
+                        <i class="bi bi-cpu-fill"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h4>Semana 10</h4>
+                    <h5>Electrónica</h5>
+                    <p>Sistema de vibración y pantalla LED inteligente</p>
+                    <a href="/semanas/semana10" class="card-link">
+                        <span>Próximamente</span>
+                        <i class="bi bi-clock-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="week-card upcoming" data-week="12">
+                <div class="card-image">
+                    <div class="placeholder-image">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <div class="card-overlay">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h4>Semana 12</h4>
+                    <h5>Programación</h5>
+                    <p>Lógica de recordatorios y control inteligente</p>
+                    <a href="/semanas/semana12" class="card-link">
+                        <span>Próximamente</span>
+                        <i class="bi bi-clock-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="week-card upcoming" data-week="14">
+                <div class="card-image">
+                    <div class="placeholder-image">
+                        <i class="bi bi-clipboard-data-fill"></i>
+                    </div>
+                    <div class="card-overlay">
+                        <i class="bi bi-clipboard-data-fill"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h4>Semana 14</h4>
+                    <h5>Testing</h5>
+                    <p>Pruebas de usabilidad y validación con usuarios</p>
+                    <a href="/semanas/semana14" class="card-link">
+                        <span>Próximamente</span>
+                        <i class="bi bi-clock-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="week-card upcoming" data-week="16">
+                <div class="card-image">
+                    <div class="placeholder-image">
+                        <i class="bi bi-trophy-fill"></i>
+                    </div>
+                    <div class="card-overlay">
+                        <i class="bi bi-trophy-fill"></i>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h4>Semana 16</h4>
+                    <h5>Presentación Final</h5>
+                    <p>Demo completo y documentación del proyecto</p>
+                    <a href="/semanas/semana16" class="card-link">
+                        <span>Próximamente</span>
+                        <i class="bi bi-clock-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</BaseLayout>
