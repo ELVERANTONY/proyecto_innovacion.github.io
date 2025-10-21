@@ -1,0 +1,46 @@
+$filePath = "semana02/index.html"
+$newContent = @"
+            <!-- Retos Section -->
+            <section class="content-section">
+                <h2>Retos Propuestos</h2>
+                <div class="retos-grid">
+                    <div class="reto-card">
+                        <img src="imagenes/retos/reto1-ergonomia.jpg" alt="Herramientas ergonómicas" class="reto-image">
+                        <h3>Reto 1</h3>
+                        <p>¿Cómo podríamos diseñar herramientas ergonómicas que reduzcan la fatiga y riesgo de lesiones en trabajos de manufactura?</p>
+                    </div>
+                    <div class="reto-card">
+                        <img src="imagenes/retos/reto2-compostaje.jpg" alt="Compostaje en espacios reducidos" class="reto-image">
+                        <h3>Reto 2</h3>
+                        <p>¿Cómo podríamos incentivar la compostación de residuos orgánicos en espacios reducidos, promoviendo la reducción de desechos y el cuidado del medioambiente?</p>
+                    </div>
+                    <div class="reto-card">
+                        <img src="imagenes/retos/reto3-realidad-mixta.jpg" alt="Entorno de realidad mixta" class="reto-image">
+                        <h3>Reto 3</h3>
+                        <p>¿Cómo podríamos crear un entorno de realidad mixta que permita a varios operadores, supervisores y mecánicos colaborar en tiempo real, entrenando conjuntamente en la operación y mantenimiento de grúas u otro equipo especializado?</p>
+                    </div>
+                    <div class="reto-card selected">
+                        <img src="imagenes/retos/reto4-realidad-mixta-equipos.jpg" alt="Colaboración en tiempo real" class="reto-image">
+                        <h3>Reto 4 - ELEGIDO</h3>
+                        <p>¿Cómo podríamos crear un entorno de realidad mixta que permita a varios operadores, supervisores y mecánicos colaborar en tiempo real, entrenando conjuntamente en la operación y mantenimiento de grúas u otro equipo especializado?</p>
+                        <div class="selected-badge"><i class="bi bi-check-circle-fill"></i> SELECCIONADO</div>
+                    </div>
+                </div>
+            </section>
+"@
+
+# Hacer una copia de seguridad
+$backupPath = "$filePath.bak"
+Copy-Item -Path $filePath -Destination $backupPath -Force
+
+# Leer el contenido actual
+$content = Get-Content -Path $filePath -Raw
+
+# Reemplazar la sección de retos
+$pattern = '(?s)<!-- Retos Section -->.*?<\/section>'
+$updatedContent = $content -replace $pattern, $newContent
+
+# Guardar los cambios
+$updatedContent | Set-Content -Path $filePath -NoNewline
+
+Write-Host "Sección de retos actualizada correctamente. Se creó una copia de seguridad en $backupPath"

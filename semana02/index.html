@@ -1,0 +1,661 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 02 - Design Thinking | ErgoWave</title>
+    <meta name="color-scheme" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <i class="bi bi-mouse"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>ERGOWAVE</h1>
+                        <span>Mouse TecnolÃ³gico</span>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="MenÃº">
+                    <i class="bi bi-list"></i>
+                </button>
+                <nav class="main-nav" id="mainNav">
+                    <a href="../index.html" class="nav-link">
+                        <i class="bi bi-house-fill"></i>
+                        <span>Inicio</span>
+                    </a>
+                    <a href="index.html" class="nav-link active">
+                        <i class="bi bi-lightbulb-fill"></i>
+                        <span>Semana 02</span>
+                    </a>
+                    <a href="../semana04/index.html" class="nav-link">
+                        <i class="bi bi-box-fill"></i>
+                        <span>Semana 04</span>
+                    </a>
+                    <a href="../semana06/index.html" class="nav-link">
+                        <i class="bi bi-scissors"></i>
+                        <span>Semana 06</span>
+                    </a>
+                    <a href="../semana08/index.html" class="nav-link">
+                        <i class="bi bi-puzzle-fill"></i>
+                        <span>Semana 08</span>
+                    </a>
+                    <a href="../semana10/index.html" class="nav-link">
+                        <i class="bi bi-cpu-fill"></i>
+                        <span>Semana 10</span>
+                    </a>
+                    <a href="../semana12/index.html" class="nav-link">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Semana 12</span>
+                    </a>
+                    <a href="../semana14/index.html" class="nav-link">
+                        <i class="bi bi-clipboard-data-fill"></i>
+                        <span>Semana 14</span>
+                    </a>
+                    <a href="../semana16/index.html" class="nav-link">
+                        <i class="bi bi-trophy-fill"></i>
+                        <span>Semana 16</span>
+                    </a>
+                    <a href="../innovacion/index.html" class="nav-link nav-link-special">
+                        <i class="bi bi-rocket-takeoff-fill"></i>
+                        <span>InnovaciÃ³n</span>
+                    </a>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <div class="breadcrumb-content">
+                <a href="../index.html"><i class="bi bi-house-fill"></i> Inicio</a>
+                <i class="bi bi-chevron-right"></i>
+                <a href="../index.html">Proyecto</a>
+                <i class="bi bi-chevron-right"></i>
+                <span>Semana 02 - Design Thinking</span>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="week-content">
+            <div class="week-header">
+                <h1>Semana 02 â€“ Design Thinking</h1>
+                <p class="week-subtitle">IdentificaciÃ³n del problema y desarrollo de soluciones innovadoras</p>
+            </div>
+
+                                    <!-- Retos Section -->
+            <section class="content-section">
+                <h2>Retos Propuestos</h2>
+                <div class="retos-grid">
+                    <div class="reto-card">
+                        <img src="imagenes/retos/reto1-ergonomia.jpg" alt="Herramientas ergonÃ³micas" class="reto-image">
+                        <h3>Reto 1</h3>
+                        <p>Â¿CÃ³mo podrÃ­amos diseÃ±ar herramientas ergonÃ³micas que reduzcan la fatiga y riesgo de lesiones en trabajos de manufactura?</p>
+                    </div>
+                    <div class="reto-card">
+                        <img src="imagenes/retos/reto2-compostaje.jpg" alt="Compostaje en espacios reducidos" class="reto-image">
+                        <h3>Reto 2</h3>
+                        <p>Â¿CÃ³mo podrÃ­amos incentivar la compostaciÃ³n de residuos orgÃ¡nicos en espacios reducidos, promoviendo la reducciÃ³n de desechos y el cuidado del medioambiente?</p>
+                    </div>
+                    <div class="reto-card">
+                        <img src="imagenes/retos/reto3-realidad-mixta.jpg" alt="Entorno de realidad mixta" class="reto-image">
+                        <h3>Reto 3</h3>
+                        <p>Â¿CÃ³mo podrÃ­amos crear un entorno de realidad mixta que permita a varios operadores, supervisores y mecÃ¡nicos colaborar en tiempo real, entrenando conjuntamente en la operaciÃ³n y mantenimiento de grÃºas u otro equipo especializado?</p>
+                    </div>
+                    <div class="reto-card selected">
+                        <img src="imagenes/retos/reto4-realidad-mixta-equipos.jpg" alt="ColaboraciÃ³n en tiempo real" class="reto-image">
+                        <h3>Reto 4 - ELEGIDO</h3>
+                        <p>Â¿CÃ³mo podrÃ­amos crear un entorno de realidad mixta que permita a varios operadores, supervisores y mecÃ¡nicos colaborar en tiempo real, entrenando conjuntamente en la operaciÃ³n y mantenimiento de grÃºas u otro equipo especializado?</p>
+                        <div class="selected-badge"><i class="bi bi-check-circle-fill"></i> SELECCIONADO</div>
+                    </div>
+                </div>
+            </section>
+
+                        <!-- Team Section -->
+            <section class="content-section">
+                <h2>Integrantes del Equipo</h2>
+                <div class="team-list">
+                    <div class="team-member">
+                        <img src="imagenes/equipo/equipo.jpg" alt="Equipo de trabajo" class="team-photo">
+                        <div class="team-details">
+                            <span class="member-name">Piero Fabrizzio De la Cruz Palpa</span>
+                            <span class="member-role">LÃ­der de Proyecto</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="imagenes/equipo/elver.jpg" alt="Elver Cholan" class="team-photo">
+                        <div class="team-details">
+                            <span class="member-name">Cholan Garcia Elver Antony</span>
+                            <span class="member-role">Desarrollador Principal</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="imagenes/equipo/santiago.jpg" alt="Santiago Salas" class="team-photo">
+                        <div class="team-details">
+                            <span class="member-name">Salas Perez Santiago Agustin</span>
+                            <span class="member-role">Especialista en Hardware</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                        <!-- Problem Definition -->
+            <section class="content-section">
+                <h2>Problema y Contexto</h2>
+                <div class="problem-content">
+                    <div class="problem-images">
+                        <img src="imagenes/problema/lesiones.jpg" alt="Lesiones por movimientos repetitivos" class="problem-image">
+                        <img src="imagenes/problema/estadisticas.jpg" alt="EstadÃ­sticas de lesiones" class="problem-image">
+                    </div>
+                    <p>El uso repetitivo de ciertas actividades genera fatiga muscular y dolor, lo que aumenta el riesgo de desarrollar tendinitis y lesiones por movimientos repetitivos (LER). Esta situaciÃ³n no solo afecta la productividad del trabajador, sino tambiÃ©n su calidad de vida. Por lo tanto, existe una necesidad urgente de implementar soluciones ergonÃ³micas efectivas que mitiguen estos problemas.</p>
+                    
+                    <div class="statistics">
+                        <div class="stat-item">
+                            <img src="imagenes/problema/estadisticas-dolor.png" alt="EstadÃ­sticas de dolor" class="stat-image">
+                            <span class="stat-number">68%</span>
+                            <span class="stat-label">JÃ³venes peruanos con dolor crÃ³nico</span>
+                        </div>
+                        <div class="stat-item">
+                            <img src="imagenes/problema/horas-uso.png" alt="Horas de uso" class="stat-image">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Horas promedio frente al PC</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Insight Section -->
+            <section class="content-section">
+                <h2>Insight Principal</h2>
+                <div class="insight-card">
+                    <blockquote>
+                        "Si una herramienta manual incorporara ergonomÃ­a avanzada y asistencia motorizada, los operarios podrÃ­an trabajar con menos esfuerzo y menor riesgo de lesiones."
+                    </blockquote>
+                </div>
+            </section>
+
+                        <!-- Brainstorming Section -->
+            <section class="content-section">
+                <h2>Ideas del Brainstorming</h2>
+                <div class="ideas-grid">
+                    <div class="idea-item">
+                        <img src="imagenes/ideas/boceto1.jpg" alt="Boceto 1" class="idea-image">
+                        <h4>Mango viscoelÃ¡stico</h4>
+                        <p>Para amortiguar presiÃ³n</p>
+                    </div>
+                    <div class="idea-item">
+                        <img src="imagenes/ideas/boceto2.jpg" alt="Boceto 2" class="idea-image">
+                        <h4>Mango ajustable</h4>
+                        <p>Con texturas antideslizantes</p>
+                    </div>
+                    <div class="idea-item">
+                        <img src="imagenes/ideas/sensores.jpg" alt="Sensores" class="idea-image">
+                        <h4>Sensores de alerta</h4>
+                        <p>Sobre fuerza excesiva</p>
+                    </div>
+                    <div class="idea-item selected">
+                        <img src="imagenes/ideas/motor-asistido.jpg" alt="Motor asistido" class="idea-image">
+                        <h4>Motor asistido</h4>
+                        <p>Para facilitar el giro (BioGrip Assist)</p>
+                        <div class="selected-badge">âœ“ ELEGIDO</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Justification Section -->
+            <section class="content-section">
+                <h2>JustificaciÃ³n de la SoluciÃ³n</h2>
+                <div class="justification-content">
+                    <div class="justification-points">
+                        <div class="point">
+                            <span class="point-icon">âœ…</span>
+                            <span>Combina ergonomÃ­a y tecnologÃ­a activa</span>
+                        </div>
+                        <div class="point">
+                            <span class="point-icon">âœ…</span>
+                            <span>Motor pequeÃ±o integrado reduce esfuerzo fÃ­sico</span>
+                        </div>
+                        <div class="point">
+                            <span class="point-icon">âœ…</span>
+                            <span>Previene lesiones por movimientos repetitivos</span>
+                        </div>
+                        <div class="point">
+                            <span class="point-icon">âœ…</span>
+                            <span>Mejora productividad y bienestar del usuario</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BioGrip Features -->
+            <section class="content-section">
+                <h2>CaracterÃ­sticas del BioGrip Assist</h2>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="bi bi-lightning-charge"></i></span>
+                        <div class="feature-content">
+                            <h4>Motor elÃ©ctrico integrado</h4>
+                            <p>En el mango para asistencia automÃ¡tica</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">ðŸ”˜</span>
+                        <div class="feature-content">
+                            <h4>BotÃ³n activador manual</h4>
+                            <p>Control intuitivo de la asistencia</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">ðŸ¤</span>
+                        <div class="feature-content">
+                            <h4>EmpuÃ±adura ergonÃ³mica</h4>
+                            <p>Con goma antideslizante</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="bi bi-battery-charging"></i></span>
+                        <div class="feature-content">
+                            <h4>BaterÃ­a recargable</h4>
+                            <p>En la base del dispositivo</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="bi bi-arrow-repeat"></i></span>
+                        <div class="feature-content">
+                            <h4>Punta intercambiable</h4>
+                            <p>Para diferentes tipos de trabajo</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon"><i class="bi bi-bar-chart"></i></span>
+                        <div class="feature-content">
+                            <h4>Sensor de torque</h4>
+                            <p>Regula la potencia y evita daÃ±os</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SWOT Analysis -->
+            <section class="content-section">
+                <h2>AnÃ¡lisis FODA</h2>
+                <div class="swot-grid">
+                    <div class="swot-card strengths">
+                        <h3>Fortalezas</h3>
+                        <ul>
+                            <li>Reduce fatiga y lesiones laborales</li>
+                            <li>Aumenta comodidad y productividad</li>
+                            <li>DiseÃ±o modular y sostenible</li>
+                        </ul>
+                    </div>
+                    <div class="swot-card weaknesses">
+                        <h3>Limitaciones</h3>
+                        <ul>
+                            <li>Prototipo inicial solo en boceto</li>
+                            <li>Puede aumentar el costo frente a herramientas convencionales</li>
+                            <li>Falta validar duraciÃ³n del motor y baterÃ­a</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="content-section">
+                <h2>ConclusiÃ³n</h2>
+                <div class="conclusion-content">
+                    <p>El BioGrip Assist es una herramienta ergonÃ³mica innovadora que combina diseÃ±o clÃ¡sico y asistencia motorizada. Reduce riesgos laborales, mejora el bienestar del trabajador y tiene potencial de transformar procesos en manufactura.</p>
+                </div>
+            </section>
+
+            <!-- Gallery -->
+            <section class="content-section">
+                <h2>Evidencias del Proceso</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="imagenes/brainstorming.jpg" alt="SesiÃ³n de brainstorming" onerror="this.style.display='none'">
+                        <p>SesiÃ³n de brainstorming del equipo</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/prototype-sketch.jpg" alt="Boceto del prototipo" onerror="this.style.display='none'">
+                        <p>Primeros bocetos del BioGrip Assist</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imagenes/team-work.jpg" alt="Trabajo en equipo" onerror="this.style.display='none'">
+                        <p>Trabajo colaborativo del equipo</p>
+                    </div>
+                </div>
+            </section>
+                    <!-- GalerÃ­a de ImÃ¡genes del Proceso de DiseÃ±o -->
+            <section class="content-section">
+                <h2>GalerÃ­a del Proceso de DiseÃ±o</h2>
+                <div class="gallery-container">
+                    <div class="gallery-grid">                    </div>
+                </div>
+            </section>            <!-- GalerÃ­a de ImÃ¡genes del Proceso de DiseÃ±o -->
+            <section class="content-section">
+                <h2>GalerÃ­a del Proceso de DiseÃ±o</h2>
+                <div class="gallery-container">
+                    <div class="gallery-grid">                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen1_semana2 (1).png" alt="Imagen1_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen1_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen10_semana2 (1).png" alt="Imagen10_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen10_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen11_semana2 (1).png" alt="Imagen11_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen11_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen12_semana2 (1).png" alt="Imagen12_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen12_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen13_semana2.png" alt="Imagen13_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen13_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen14_semana2 (1).png" alt="Imagen14_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen14_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen15_semana2 (1).png" alt="Imagen15_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen15_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen16_semana2 (1).png" alt="Imagen16_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen16_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen17_semana2 (1).png" alt="Imagen17_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen17_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen18_semana2 (1).png" alt="Imagen18_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen18_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen19_semana2 (1).png" alt="Imagen19_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen19_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen2_semana2 (1).png" alt="Imagen2_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen2_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen20_semana2 (1).png" alt="Imagen20_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen20_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen21_semana2 (1).png" alt="Imagen21_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen21_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen22_semana2 (1).png" alt="Imagen22_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen22_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen23_semana2 (1).png" alt="Imagen23_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen23_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen24_semana2 (1).png" alt="Imagen24_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen24_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen25_semana2 (1).png" alt="Imagen25_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen25_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen26_semana2 (1).png" alt="Imagen26_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen26_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen27_semana2 (1).png" alt="Imagen27_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen27_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen28_semana2 (1).png" alt="Imagen28_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen28_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen29_semana2 (1).png" alt="Imagen29_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen29_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen3_semana2 (1).png" alt="Imagen3_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen3_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen30_semana2 (1).png" alt="Imagen30_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen30_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen31_semana2 (1).png" alt="Imagen31_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen31_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen32_semana2 (1).png" alt="Imagen32_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen32_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen33_semana2.png" alt="Imagen33_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen33_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen34_semana2 (1).png" alt="Imagen34_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen34_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen35_semana2 (1).png" alt="Imagen35_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen35_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen36_semana2 (1).png" alt="Imagen36_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen36_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen37_semana2 (1).png" alt="Imagen37_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen37_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen38_semana2.png" alt="Imagen38_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen38_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen4_semana2 (1).png" alt="Imagen4_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen4_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen5_semana2 (1).png" alt="Imagen5_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen5_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen6_semana2 (1).png" alt="Imagen6_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen6_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen7_semana2 (1).png" alt="Imagen7_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen7_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen8_semana2 (1).png" alt="Imagen8_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen8_semana2</div>
+                        </div>                        <div class="gallery-item">
+                            <div class="gallery-img-container">
+                                <img src="../images/SEMANA02/Imagen9_semana2 (1).png" alt="Imagen9_semana2" class="gallery-image">
+                            </div>
+                            <div class="gallery-caption">Imagen9_semana2</div>
+                        </div>                    </div>
+                </div>
+            </section></main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>ErgoWave</h4>
+                    <p>InnovaciÃ³n en ergonomÃ­a digital</p>
+                </div>
+                <div class="footer-links">
+                    <a href="../innovacion/index.html">InnovaciÃ³n TecnolÃ³gica</a>
+                    <a href="../index.html">Volver al inicio</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TECSUP - Proyecto de InnovaciÃ³n</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../app.js" defer></script>
+    <script src="app.js" defer></script>
+
+<script>
+// Script para el modal de la galerÃ­a
+document.addEventListener('DOMContentLoaded', function() {
+    // Crear el modal
+    const modal = document.createElement('div');
+    modal.id = 'imageModal';
+    modal.className = 'modal';
+    modal.innerHTML = 
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    ;
+    document.body.appendChild(modal);
+
+    // Obtener todas las imÃ¡genes de la galerÃ­a
+    const images = document.querySelectorAll('.gallery-image');
+    const modalImg = document.getElementById('modalImage');
+    const span = document.getElementsByClassName('close')[0];
+
+    // Agregar evento de clic a cada imagen
+    images.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+        });
+    });
+
+    // Cerrar el modal al hacer clic en la X
+    span.onclick = function() {
+        modal.style.display = 'none';
+    }
+
+    // Cerrar el modal al hacer clic fuera de la imagen
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+});
+</script>
+<script>
+// Script para el modal de la galerÃ­a
+document.addEventListener('DOMContentLoaded', function() {
+    // Crear el modal
+    const modal = document.createElement('div');
+    modal.id = 'imageModal';
+    modal.className = 'modal';
+    modal.innerHTML = 
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    ;
+    document.body.appendChild(modal);
+
+    // Obtener todas las imÃ¡genes de la galerÃ­a
+    const images = document.querySelectorAll('.gallery-image');
+    const modalImg = document.getElementById('modalImage');
+    const modalContainer = document.getElementById('imageModal');
+    const span = document.getElementsByClassName('close')[0];
+
+    // Agregar evento de clic a cada imagen
+    images.forEach(img => {
+        img.addEventListener('click', function() {
+            modalContainer.style.display = 'flex';
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            document.body.style.overflow = 'hidden'; // Prevenir scroll
+        });
+    });
+
+    // Cerrar el modal
+    function closeModal() {
+        modalContainer.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restaurar scroll
+    }
+
+    // Cerrar el modal al hacer clic en la X
+    span.onclick = closeModal;
+
+    // Cerrar el modal al hacer clic fuera de la imagen
+    window.onclick = function(event) {
+        if (event.target == modalContainer) {
+            closeModal();
+        }
+    }
+    
+    // Cerrar con tecla ESC
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    });
+});
+</script></body>
+</html>
